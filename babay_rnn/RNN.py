@@ -21,3 +21,6 @@ class RNN(object):
         self.h = np.tanh(np.dot(self.W_hh, self.h) + np.dot(self.W_xh, x))
         y = np.dot(self.W_hy, self.h)
         return y
+
+    def fit(self, X, y):
+        raise NotImplementedError
